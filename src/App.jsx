@@ -10,7 +10,7 @@ function App() {
       <header className="site-header">
         <nav className="site-navigation">
           <ul>
-            <li><ScrollLink to="projects" smooth={true} duration={500}>Projects</ScrollLink></li>
+            <li><ScrollLink to="projects-section" smooth={true} duration={500}>Projects</ScrollLink></li>
             <li><ScrollLink to="about-section" smooth={true} duration={500}>About</ScrollLink></li>
           </ul>
         </nav>

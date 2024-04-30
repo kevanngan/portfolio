@@ -1,38 +1,32 @@
 import React, { useState, useEffect } from 'react';
 
-const Post = () => {
-  const [postData, setPostData] = useState(null);
+const Hero = ({ restBase }) => {
+  const postId = 19;
+  const restPath = `${restBase}posts/${postId}`; 
+  const [heroData, setHeroData] = useState(null);
 
   useEffect(() => {
-    const fetchPost = async () => {
-      try {
-        const response = await fetch('https://kevanngan.com/portfolio/wp-json/wp/v2/posts/19');
-        if (response.ok) {
-          const data = await response.json();
-          setPostData(data);
-        } else {
-          console.error('Failed to fetch post data');
-        }
-      } catch (error) {
-        console.error('Error fetching post data:', error);
+    const fetchHeroData = async () => {
+      const response = await fetch(restPath);
+      if (response.ok) {
+        const data = await response.json();
+        setHeroData(data);
       }
     };
 
-    fetchPost();
-  }, []);
+    fetchHeroData();
+  }, [restPath]);
 
   return (
-    <div>
-      {postData ? (
-        <div>
-          <h1>{postData.title.rendered}</h1>
-          <div dangerouslySetInnerHTML={{ __html: postData.content.rendered }} />
-        </div>
-      ) : (
-        <p>Loading...</p>
+    <>
+      {heroData && (
+        <article id={`hero-section`}>
+          <h1>{heroData.title.rendered}</h1>
+          <div className="entry-content" dangerouslySetInnerHTML={{ __html: heroData.content.rendered }}></div>
+        </article>
       )}
-    </div>
+    </>
   );
 };
 
-export default Post;
+export default Hero;
