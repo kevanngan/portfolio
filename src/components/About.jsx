@@ -20,7 +20,7 @@ const About = ({ restBase }) => {
   return (
     <>
       {aboutData && (
-        <article id={`post-${aboutData.id}`}>
+        <article id={`about-section`}>
           <h1>{aboutData.title.rendered}</h1>
           <div className="entry-content" dangerouslySetInnerHTML={{ __html: aboutData.content.rendered }}></div>
         </article>

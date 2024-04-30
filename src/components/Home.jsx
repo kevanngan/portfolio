@@ -8,19 +8,14 @@ import Footer from './Footer';
 const Home = ({ restBase }) => {
   const pageId = 7;
   const restPath = `${restBase}pages/${pageId}`;
+  const [pageData, setPageData] = useState(null);
 
   useEffect(() => {
     const fetchPageData = async () => {
-      try {
-        const response = await fetch(restPath);
-        if (response.ok) {
-          const data = await response.json();
-          setPageData(data);
-        } else {
-          throw new Error('Failed to fetch data');
-        }
-      } catch (error) {
-        console.error('Error fetching page data:', error);
+      const response = await fetch(restPath);
+      if (response.ok) {
+        const data = await response.json();
+        setPageData(data);
       }
     };
 
@@ -29,11 +24,15 @@ const Home = ({ restBase }) => {
 
   return (
     <div className="home-page">
-      <Header />
-      <Hero />
-      <Projects restBase={restBase} />
-      <About restBase={restBase} />
-      <Footer />
+      {pageData && (
+        <>
+          <Header />
+          <Hero />
+          <Projects restBase={restBase} />
+          <About restBase={restBase} />
+          <Footer />
+        </>
+      )}
     </div>
   );
 };
