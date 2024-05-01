@@ -22,6 +22,7 @@ const Hero = ({ restBase }) => {
       {heroData && (
         <article id={`hero-section`}>
           <div className="hero-content" dangerouslySetInnerHTML={{ __html: heroData.content.rendered }}></div>
+          <img src="/public/vite.svg" alt="Character image." />
         </article>
       )}
     </>

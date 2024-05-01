@@ -22,6 +22,7 @@ const Project = ({ restBase }) => {
       {projectData && (
         <article id={`projects-section`}>
           <h1>My Projects</h1>
+          
           <div className="project-card-1">
             <div className="project-image-container">
               <a href="https://bigboyburgers.bcitwebdeveloper.ca/" target="_blank">
