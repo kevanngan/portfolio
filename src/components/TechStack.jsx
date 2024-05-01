@@ -1,4 +1,3 @@
-// TechStack.jsx
 import React from 'react';
 
 const techStackImages = [

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { techStackImages, TechStack } from './TechStack';
+import { techStackImages, TechStack } from '../components/TechStack';
 
 const About = ({ restBase }) => {
   const postId = 16;

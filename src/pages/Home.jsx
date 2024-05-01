@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import Header from '../components/Header';
-import Hero from '../components/Hero';
-import Projects from '../components/Projects';
-import About from '../components/About';
-import Footer from '../components/Footer';
+import Header from '../components/header/Header';
+import Hero from '../sections/Hero';
+import Projects from '../sections/Projects';
+import About from '../sections/About';
+import Footer from '../components/footer/Footer';
 
 const Home = ({ restBase }) => {
   const pageId = 7;
