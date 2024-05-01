@@ -3,6 +3,7 @@ import { Link as ScrollLink } from 'react-scroll';
 import Home from './components/Home';
 
 function App() {
+  
   const restBase = 'https://kevanngan.com/portfolio/wp-json/wp/v2/';
 
   return (

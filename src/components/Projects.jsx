@@ -20,9 +20,8 @@ const Project = ({ restBase }) => {
   return (
     <>
       {projectData && (
-        <article id={`project-section`}>
-          <h1>{projectData.title.rendered}</h1>
-          <div className="entry-content" dangerouslySetInnerHTML={{ __html: projectData.content.rendered }}></div>
+        <article id={`projects-section`}>
+          <h1>My Projects</h1>
         </article>
       )}
     </>

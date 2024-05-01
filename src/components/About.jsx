@@ -21,8 +21,8 @@ const About = ({ restBase }) => {
     <>
       {aboutData && (
         <article id={`about-section`}>
-          <h1>{aboutData.title.rendered}</h1>
-          <div className="entry-content" dangerouslySetInnerHTML={{ __html: aboutData.content.rendered }}></div>
+          <h1>About Me</h1>
+          <div className="about-content" dangerouslySetInnerHTML={{ __html: aboutData.content.rendered }}></div>
         </article>
       )}
     </>
