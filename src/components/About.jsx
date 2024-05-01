@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { techStackImages, TechStack } from './TechStack';
 
 const About = ({ restBase }) => {
   const postId = 16;
@@ -23,6 +24,7 @@ const About = ({ restBase }) => {
         <article id={`about-section`}>
           <h1>About Me</h1>
           <div className="about-content" dangerouslySetInnerHTML={{ __html: aboutData.content.rendered }}></div>
+          <TechStack images={ techStackImages } />
         </article>
       )}
     </>
