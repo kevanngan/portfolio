@@ -21,8 +21,7 @@ const Hero = ({ restBase }) => {
     <>
       {heroData && (
         <article id={`hero-section`}>
-          <h1>{heroData.title.rendered}</h1>
-          <div className="entry-content" dangerouslySetInnerHTML={{ __html: heroData.content.rendered }}></div>
+          <div className="hero-content" dangerouslySetInnerHTML={{ __html: heroData.content.rendered }}></div>
         </article>
       )}
     </>
