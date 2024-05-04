@@ -23,20 +23,23 @@ const About = ({ restBase }) => {
     <>
       {aboutData && (
         <article id={`about-section`}>
-          <h1>About Me</h1>
-          <div className="about-content" dangerouslySetInnerHTML={{ __html: aboutData.content.rendered }}></div>
-          <FAQDropdown 
-            question="What's your favourite genres of music?"
-            answer="I enjoy Future Bass and Melodic dubstep, J-Pop and C-Pop."
-          />
-          <FAQDropdown 
-            question="What are your favourite games?"
-            answer="League of Legends, Teamfight Tactics, and Valorant."
-          />
-          <FAQDropdown 
-            question="What hobby do you want to get into?"
-            answer="I'm looking to get into gardening, I find the thought of just working on a small vegetable garden relaxing and the satisfying when the vegetable or fruits are ripe. (Assuming everything goes well!)"
-          />
+          <h1>{aboutData.title.rendered}</h1>
+          <p>{aboutData.acf.intro_1}</p>
+          <p>{aboutData.acf.intro_2}</p>
+          <div className="faq">
+            <FAQDropdown 
+              question="What's your favourite genres of music?"
+              answer="I enjoy Future Bass and Melodic dubstep, J-Pop and C-Pop."
+            />
+            <FAQDropdown 
+              question="What are your favourite games?"
+              answer="League of Legends, Teamfight Tactics, and Valorant."
+            />
+            <FAQDropdown 
+              question="What hobby do you want to get into?"
+              answer="I'm looking to get into gardening, I find the thought of just working on a small vegetable garden relaxing and satisfying when the vegetable or fruits are ripen. (Assuming everything goes well!)"
+            />
+          </div>
           <TechStack images={ techStackImages } />
         </article>
       )}
