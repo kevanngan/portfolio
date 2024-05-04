@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { techStackImages, TechStack } from '../components/TechStack';
-import FAQDropdown from '../components/FaqDropdown';
+import Dropdown from '../components/Dropdown';
 
 const About = ({ restBase }) => {
   const postId = 16;
@@ -27,15 +27,15 @@ const About = ({ restBase }) => {
           <p>{aboutData.acf.intro_1}</p>
           <p>{aboutData.acf.intro_2}</p>
           <div className="faq">
-            <FAQDropdown 
+            <Dropdown 
               question="What's your favourite genres of music?"
               answer="I enjoy Future Bass and Melodic dubstep, J-Pop and C-Pop."
             />
-            <FAQDropdown 
+            <Dropdown 
               question="What are your favourite games?"
               answer="League of Legends, Teamfight Tactics, and Valorant."
             />
-            <FAQDropdown 
+            <Dropdown 
               question="What hobby do you want to get into?"
               answer="I'm looking to get into gardening, I find the thought of just working on a small vegetable garden relaxing and satisfying when the vegetable or fruits are ripen. (Assuming everything goes well!)"
             />
