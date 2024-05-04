@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const Project = ({ restBase }) => {
   const postId = 21;
@@ -32,9 +33,9 @@ const Project = ({ restBase }) => {
             <div className="project-info">
               <h3>Big Boy Burgers</h3>
               <p className="project-description">Explore this collaborative capstone project, an online burger store built with WooCommerce on WordPress.</p>
-              <a href="" target="_blank">
+              <Link to="/portfolio/bigboyburgers">
                 <p>More Details</p>
-              </a>
+              </Link>
               <a href="https://github.com/htpwebdesign/bigboyburgers-theme" target="_blank">
                 <p>View GitHub</p>
               </a>
@@ -50,9 +51,9 @@ const Project = ({ restBase }) => {
             <div className="project-info">
               <h3>Showboat</h3>
               <p className="project-description">A movie database project built with React.</p>
-              <a href="" target="_blank">
+              <Link to="/portfolio/showboat">
                 <p>More Details</p>
-              </a>
+              </Link>
               <a href="https://github.com/hojinchang/showboat" target="_blank">
                 <p>View GitHub</p>
               </a>
