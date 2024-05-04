@@ -1,0 +1,33 @@
+.faq-dropdown .arrow {
+    margin-left: 5px;
+    transition: transform 0.3s;
+}
+
+/* Define the animation */
+@keyframes rotateArrow {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+/* Apply the animation when the arrow is open */
+.faq-dropdown .arrow.open svg {
+    animation: rotateArrow 0.3s forwards;
+}
+
+/* Apply the animation when the arrow is closed */
+.faq-dropdown .arrow.closed svg {
+    animation: rotateArrowReverse 0.3s forwards;
+}
+
+@keyframes rotateArrowReverse {
+    0% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
