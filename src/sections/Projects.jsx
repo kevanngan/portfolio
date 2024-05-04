@@ -21,7 +21,7 @@ const Project = ({ restBase }) => {
     <>
       {projectData && (
         <article id={`projects-section`}>
-          <h1>My Projects</h1>
+          <h1>{projectData.title.rendered}</h1>
           
           <div className="project-card-1">
             <div className="project-image-container">
@@ -36,7 +36,7 @@ const Project = ({ restBase }) => {
                 <p>More Details</p>
               </a>
               <a href="https://github.com/htpwebdesign/bigboyburgers-theme" target="_blank">
-                <p>Go to GitHub</p>
+                <p>View GitHub</p>
               </a>
             </div>
           </div>
@@ -54,7 +54,7 @@ const Project = ({ restBase }) => {
                 <p>More Details</p>
               </a>
               <a href="https://github.com/hojinchang/showboat" target="_blank">
-                <p>Go to GitHub</p>
+                <p>View GitHub</p>
               </a>
             </div>
           </div>
