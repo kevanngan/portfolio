@@ -5,18 +5,25 @@ const Showboat = ({ restBase }) => {
     const pageId = 64; 
     const restPath = `${restBase}pages/${pageId}`;
     const [pageData, setPageData] = useState(null);
-    const [images, setImages] = useState([]);
+    const [icons, setIcons] = useState([]);
+    const [projectImage, setProjectImage] = useState(null);
 
     useEffect(() => {
         const fetchData = async () => {
             const response = await fetch(restPath);
             const data = await response.json();
             setPageData(data);
+
+            const projectImageId = 42;
+            const projectImageResponse = await fetch(`${restBase}media/${projectImageId}`);
+            const projectImageData = await projectImageResponse.json();
+            setProjectImage(projectImageData);
+
             if (data.acf && Array.isArray(data.acf.stack_icons)) {
-                const imageDetails = await Promise.all(data.acf.stack_icons.map(id => 
+                const iconDetails = await Promise.all(data.acf.stack_icons.map(id => 
                     fetch(`${restBase}media/${id}`).then(res => res.json())
                 ));
-                setImages(imageDetails);
+                setIcons(iconDetails);
             }
         };
 
@@ -29,21 +36,24 @@ const Showboat = ({ restBase }) => {
 
     return (
         <article className="showboat-wrapper">
-            <h1>{pageData.title.rendered}</h1>
-            <p>{pageData.acf.project_description}</p>
-            {pageData.acf.stack_and_tech && <h3>{pageData.acf.stack_and_tech}</h3>}
-            <div className="images-container">
-                {images.map((img, index) => (
-                    <img key={img.id || index} src={img.source_url} alt={img.alt_text || 'Stack Icon'} />
-                ))}
-            </div>
-            {pageData.acf.github && (
-                <a href={pageData.acf.github.url} target="_blank" rel="noopener noreferrer">View GitHub</a>
-            )}
-            {pageData.acf.live && (
-                <a href={pageData.acf.live.url} target="_blank" rel="noopener noreferrer">View Live</a>
-            )}
-            <div className="showboat-content" dangerouslySetInnerHTML={{ __html: pageData.content.rendered }}></div>
+            <section>
+                <h1>{pageData.title.rendered}</h1>
+                <p>{pageData.acf.project_description}</p>
+                {pageData.acf.stack_and_tech && <h3>{pageData.acf.stack_and_tech}</h3>}
+                <div className="icons-container">
+                    {icons.map((img, index) => (
+                        <img key={img.id || index} src={img.source_url} alt={img.alt_text || 'Stack Icon'} />
+                    ))}
+                </div>
+                {pageData.acf.github && (
+                    <a href={pageData.acf.github.url} target="_blank" rel="noopener noreferrer">View GitHub</a>
+                )}
+                {pageData.acf.live && (
+                    <a href={pageData.acf.live.url} target="_blank" rel="noopener noreferrer">View Live</a>
+                )}
+                
+                <div className="project-image">{projectImage && <img src={projectImage.source_url} alt={projectImage.alt_text || 'Project Image'} />}</div>
+            </section>
 
             <section className="project-details">
                 <Dropdown 
