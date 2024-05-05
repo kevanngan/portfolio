@@ -1,0 +1,30 @@
+@use '../utilities/functions' as *;
+
+// Colours
+// $primary-colour: #030415;
+// $secondary-colour: #14162D;
+// $accent-colour: #C99228;
+// $text-colour: #FDFDFD;
+
+// // Hover state
+// $accent-shade: #b48324;
+
+// // Fonts
+// $font: 'Poppins', Arial, sans-serif;
+// $line-height: 1.5;
+
+// Padding
+$padding: 1rem;
+$padding-half: 0.5rem;
+$padding-double: 2rem;
+
+// Components
+$mobile-header-height: rem(80);
+$desktop-header-height: rem(100);
+$footer-height: rem(450);
+
+// Device Widths
+$tablet-width: em(768);
+$desktop-small-width: em(1000);
+$desktop-medium-width: em(1200);
+$desktop-large-width: em(1400);
