@@ -27,10 +27,12 @@ const Home = ({ restBase }) => {
       {pageData && (
         <>
           <Header restBase={restBase}/>
-          <Hero restBase={restBase}/>
-          <Projects restBase={restBase} />
-          <About restBase={restBase} />
-          <Footer restBase={restBase}/>
+          <main>
+            <Hero restBase={restBase}/>
+            <Projects restBase={restBase} />
+            <About restBase={restBase} />
+            <Footer restBase={restBase}/>
+          </main>
         </>
       )}
     </div>

@@ -1,0 +1,24 @@
+@use '../utilities/mixins' as *;
+@use '../base/variables' as *;
+
+#hero-section {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+
+    img {
+        display: none;
+    }
+
+    .hero-content {
+        @include flex-column(center, center, 0);
+        height: 100vh;
+        text-align: center;
+
+        p {
+            font-size: 1.5rem;
+            line-height: $line-height;
+        }
+      }
+      
+}
