@@ -18,11 +18,36 @@
         transition: height 0.5s ease, visibility 0s;
         visibility: visible;
         overflow: visible;
-        height: 200px;
     }
 
     ul {
         @include flex-column(space-evenly, center);
         height: 100%;
+    }
+
+    li a,
+    li a:visited {
+        font-size: rem(16);
+        // color: $text-colour;
+        color: red;
+        padding: 1rem;
+        // transition: color $link-hover-animation-time ease-in-out;
+        text-decoration: none;
+    }
+
+    @include mq($tablet-width) {
+        & {
+            height: auto;
+            visibility: visible;
+            position: static;
+            top: auto;
+            left: auto;
+            background-color: transparent;
+            box-shadow: none;
+
+            ul {
+                @include flex-row(flex-end, center, rem(30));
+            }
+        }
     }
 }
