@@ -17,10 +17,11 @@
         transition: height 0.5s ease, visibility 0s;
         visibility: visible;
         overflow: visible;
+        height: 200px;
     }
 
     ul {
-        @include flex-column(space-evenly, center);
+        @include flex-column(space-evenly, center, 0);
         height: 100%;
     }
 
@@ -29,7 +30,7 @@
         font-size: rem(16);
         color: $text-colour;
         padding: 1rem;
-        // transition: color $link-hover-animation-time ease-in-out;
+        transition: color $link-hover-animation-time ease-in-out;
         text-decoration: none;
     }
 

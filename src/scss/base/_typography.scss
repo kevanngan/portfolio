@@ -1,10 +1,11 @@
 @use '../base/variables' as *;
 
-// body {
-//     color: $text-colour;
-//     font-family: $font;
-//     line-height: $line-height;
-// }
+body {
+    color: $text-colour;
+    background-color: $primary-colour;
+    // font-family: $font;
+    line-height: $line-height;
+}
 
 // button {
 //     font-family: $font;
