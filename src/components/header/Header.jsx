@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import HamburgerMenu from '../HamburgerMenu';
 import Nav from '../Nav';
 import { tabletWidth } from '../../globals/globalVariables';
+import { scrollToTop } from '../../globals/globalFunctions';
 
 function Header() {
 
@@ -29,7 +30,7 @@ function Header() {
     <header className={`header ${showNav ? 'show' : ''}`}>
         <img src="assets/icons/react.png" alt="React Logo" />
         <HamburgerMenu showNav={showNav} toggleNav={toggleNav} />
-        <Nav toggleNav={toggleNav} />
+        <Nav toggleNav={toggleNav} scrollToTop={scrollToTop}/>
     </header>
   );
 }

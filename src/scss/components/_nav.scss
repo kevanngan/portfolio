@@ -8,8 +8,7 @@
     height: 0;
     visibility: hidden;
     overflow: hidden;
-    // background-color: $secondary-colour;
-    background-color: white;
+    background-color: $secondary-colour;
     border-radius: 0 0 rem(15) rem(15);
     box-shadow: 0 4px 5px rgba(0, 0, 0, 0.8);
     transition: height 0.5s ease, visibility 0.5s;
@@ -28,11 +27,14 @@
     li a,
     li a:visited {
         font-size: rem(16);
-        // color: $text-colour;
-        color: red;
+        color: $text-colour;
         padding: 1rem;
         // transition: color $link-hover-animation-time ease-in-out;
         text-decoration: none;
+    }
+
+    li a:hover {
+        color: $accent-shade;
     }
 
     @include mq($tablet-width) {
@@ -48,6 +50,18 @@
             ul {
                 @include flex-row(flex-end, center, rem(30));
             }
+        }
+    }
+
+    @include mq($desktop-small-width) {
+        ul {
+            gap: rem(71);
+        }
+    }
+
+    @include mq($desktop-large-width) {
+        ul {
+            gap: rem(126);
         }
     }
 }
