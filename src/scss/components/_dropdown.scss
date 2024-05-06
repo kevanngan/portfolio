@@ -1,6 +1,10 @@
+@use '../utilities/mixins' as *;
+@use '../base/variables' as *;
+
 .dropdown .arrow {
     margin-left: 5px;
     transition: transform 0.3s;
+    fill: $accent-colour;
 }
 
 /* Define the animation */
