@@ -28,7 +28,7 @@ function Header() {
 
   return (
     <header className={`header ${showNav ? 'show' : ''}`}>
-        <img src="assets/icons/react.png" alt="React Logo" />
+        <img src="assets/logo/kn-logo.png" alt="Logo" />
         <HamburgerMenu showNav={showNav} toggleNav={toggleNav} />
         <Nav toggleNav={toggleNav} scrollToTop={scrollToTop}/>
     </header>
