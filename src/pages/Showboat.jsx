@@ -16,7 +16,7 @@ const Showboat = ({ restBase }) => {
             const data = await response.json();
             setPageData(data);
 
-            const projectImageId = 42;
+            const projectImageId = 104;
             const projectImageResponse = await fetch(`${restBase}media/${projectImageId}`);
             const projectImageData = await projectImageResponse.json();
             setProjectImage(projectImageData);
@@ -39,7 +39,7 @@ const Showboat = ({ restBase }) => {
     return (
         <>
             <Header restBase={restBase}/>
-            <article className="showboat-wrapper">
+            <article className="showboat-wrapper project-page">
                 <section>
                     <h1>{pageData.title.rendered}</h1>
                     <p>{pageData.acf.project_description}</p>

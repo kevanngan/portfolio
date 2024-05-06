@@ -16,7 +16,7 @@ const BigBoyBurgers = ({ restBase }) => {
             const data = await response.json();
             setPageData(data);
 
-            const projectImageId = 43;
+            const projectImageId = 103;
             const projectImageResponse = await fetch(`${restBase}media/${projectImageId}`);
             const projectImageData = await projectImageResponse.json();
             setProjectImage(projectImageData);
@@ -39,7 +39,7 @@ const BigBoyBurgers = ({ restBase }) => {
     return (
         <>
             <Header restBase={restBase}/>
-            <article className="bigboyburgers-wrapper">
+            <article className="bigboyburgers-wrapper project-page">
                 <section>
                     <h1>{pageData.title.rendered}</h1>
                     <p>{pageData.acf.project_description}</p>
