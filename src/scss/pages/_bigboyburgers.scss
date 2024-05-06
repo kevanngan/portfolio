@@ -17,6 +17,28 @@
                 @include flex-row-wrap(space-evenly, center, 1rem);
             }
 
+            a {
+                padding: $padding;
+                box-shadow: 5px 3px 5px $accent-shade;
+                background-color: $secondary-colour;
+                transition: 0.3s;
+                color: $text-colour;
+                border-radius: 5px;
+                width: 133px;
+                border: none;
+                cursor: pointer;
+                text-align: center;
+    
+                :hover {
+                    color: $accent-colour;
+                }
+        
+                &:hover {
+                    box-shadow: 0 0 15px 5px $accent-shade;
+                    color: $accent-colour;
+                }
+            }
+
             a:hover {
                 color: $accent-colour;
             }
