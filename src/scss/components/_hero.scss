@@ -5,9 +5,9 @@
     position: relative;
     overflow: hidden;
     @include flex-column(center, center, 0);
-    height: 100vh;
+    height: calc(100vh - $mobile-header-height);
+    margin-bottom: 6.5rem;
     text-align: center;
-    padding: 1rem;
 
     .hero-content {
 
@@ -29,7 +29,6 @@
     
             &:hover {
                 box-shadow: 0 0 15px 5px $accent-shade;
-                // transform: scale(1.1);
                 color: $accent-colour;
             }
         }
@@ -41,6 +40,7 @@
 
     @media (min-width: $tablet-width) {
     @include flex-row(space-evenly, center, 0);
+        height: 100vh;
 
         .hero-content p {
             font-size: 2rem;
@@ -75,5 +75,4 @@
             width: 800px;
         }
     }
-
 }

@@ -1,0 +1,106 @@
+@use '../utilities/mixins' as *;
+@use '../base/variables' as *;
+
+#projects-section {
+    @include flex-column(center, center, 1rem);
+    text-align: center;
+    height: 100vh;
+
+    .project-card-1,
+    .project-card-2 {
+        display: flex;
+        position: relative;
+        width: 100%;
+        justify-content: center;
+
+        .project-image-container {
+            flex: 1;
+            order: 1;
+            max-width: 30%;
+
+            img {
+                width: 200px;
+                height: 100%;
+            }
+        }
+
+        .project-info {
+            @include flex-column(center, flex-start, 0.5rem);
+            position: relative;
+            text-align: left;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 0.5rem;
+    
+            h3 {
+                font-size: 1rem;
+            }
+            
+            p {
+                font-size: 12px;
+            }
+    
+            a {
+                font-weight: bold;
+    
+                :hover {
+                    color: $accent-shade;
+                }
+            }
+        }
+
+        .project-info-1 {
+            flex: 1;
+            order: 1;
+        }
+    
+        .project-info-2 {
+            flex: 1;
+            order: 2;
+        }
+    }
+
+    @media (min-width: 550px) {
+        .project-card-1 .project-image-container img,
+        .project-card-2 .project-image-container img {
+            width: 400px;
+        }
+    }
+
+    @media (min-width: $tablet-width) {
+
+        .project-card-1,
+        .project-card-2 {
+
+            .project-image-container {
+                width: 100%;
+
+                img {
+                    width: 550px;
+                }
+            }
+
+            .project-info {
+                max-width: 350px;
+            }
+
+        }
+    }
+
+    @media (min-width: $desktop-large-width) {
+        .project-card-1,
+        .project-card-2 {
+
+            .project-image-container {
+                width: 100%;
+
+                img {
+                    width: 700px;
+                }
+            }
+
+            .project-info {
+                max-width: 700px;
+            }
+        }   
+    }
+}

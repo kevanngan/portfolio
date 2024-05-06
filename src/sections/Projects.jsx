@@ -27,12 +27,12 @@ const Project = ({ restBase }) => {
           <div className="project-card-1">
             <div className="project-image-container">
               <a href="https://bigboyburgers.bcitwebdeveloper.ca/" target="_blank">
-                <img src="" alt="Big Boy Burgers Image" />  
+                <img src="assets/images/bbb.png" alt="Big Boy Burgers Image" />  
               </a> 
             </div>
-            <div className="project-info">
+            <div className="project-info project-info-1">
               <h3>Big Boy Burgers</h3>
-              <p className="project-description">Explore this collaborative capstone project, an online burger store built with WooCommerce on WordPress.</p>
+              <p className="project-description">Explore our group capstone project, an online burger store built with WooCommerce on WordPress.</p>
               <Link to="/portfolio/bigboyburgers">
                 <p>More Details</p>
               </Link>
@@ -45,10 +45,10 @@ const Project = ({ restBase }) => {
           <div className="project-card-2">
             <div className="project-image-container">
               <a href="https://kevanngan.com/showboat" target="_blank">
-                <img src="" alt="Showboat Image" />  
+                <img src="assets/images/showboat.png" alt="Showboat Image" />  
               </a> 
             </div>
-            <div className="project-info">
+            <div className="project-info project-info-2">
               <h3>Showboat</h3>
               <p className="project-description">A movie database project built with React.</p>
               <Link to="/portfolio/showboat">
