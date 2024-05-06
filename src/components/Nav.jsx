@@ -6,24 +6,23 @@ const Nav = ({ toggleNav, scrollToTop }) => {
     const location = useLocation();
 
     useEffect(() => {
-        // Check if the new location has a hash and if the pathname matches the main page
         if (location.hash && location.pathname === "/portfolio/") {
             const id = location.hash.replace('#', '');
             setTimeout(() => {
                 const element = document.getElementById(id);
                 if (element) {
                     window.scrollTo({
-                        top: element.offsetTop - 200,  // Adjust the offset for any fixed header or similar UI element
+                        top: element.offsetTop - 200,
                         behavior: 'smooth'
                     });
                 }
-            }, 100);  // Delay the scroll a bit to ensure elements are rendered
+            }, 100);
         }
-    }, [location]);  // Run this effect whenever the location changes
+    }, [location]);
 
     const handleNavClick = (hash) => {
         if (location.pathname === "/portfolio/" && location.hash !== hash) {
-            location.hash = hash;  // This only changes the hash, does not cause re-navigation
+            location.hash = hash;
         }
     };
 
