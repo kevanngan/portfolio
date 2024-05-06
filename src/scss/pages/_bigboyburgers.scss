@@ -50,6 +50,16 @@
     }
 
     .project-details {
-        
+        @include flex-column(center, flex-start, 1rem);
+
+        p {
+            font-weight: bold;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
     }
 }
