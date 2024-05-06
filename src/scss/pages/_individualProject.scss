@@ -4,6 +4,7 @@
 .project-page {
     @include flex-column(center, flex-start, 1rem);
     position: relative;
+    height: auto;
     padding: 7rem 1rem 2rem;
 
     .project-info-wrapper {
@@ -47,6 +48,7 @@
         .project-image img {
             width: 288px;
         }
+        
     }
 
     .project-details {
@@ -54,12 +56,53 @@
 
         p {
             font-weight: bold;
+            padding-bottom: 1rem;
         }
 
         ul {
             list-style-type: disc;
-            padding-left: 20px;
+            padding-left: 28px;
+            padding-bottom: 1rem;
         }
+    }
 
+    @media (min-width: $desktop-small-width) {
+        width: 850px;
+        margin: auto;
+        gap: 3rem;
+
+        .project-info-wrapper {
+            @include flex-row(center, center, 2rem);
+
+            .project-info-content {
+                order: 0;
+
+            }
+
+            .project-image img {
+                width: 450px;
+            }
+        }
+    }
+
+    @media (min-width: $desktop-large-width) {
+        width: 1200px;
+        margin: 2rem auto;
+
+        .project-info-wrapper {
+            @include flex-row(center, center, 5rem);
+
+            .project-image img {
+                width: 450px;
+            }
+        }
+    }
+    
+    @media (min-width: 120em) {
+        margin: 5rem auto;
+
+        .project-info-wrapper .project-image img {
+            width: 650px;
+        }
     }
 }

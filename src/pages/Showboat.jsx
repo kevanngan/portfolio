@@ -63,24 +63,64 @@ const Showboat = ({ restBase }) => {
 
                 <section className="project-details">
                     <Dropdown 
-                        title="Challenges Faced" 
-                        content={<p>Describe the challenges you faced during the project.</p>} 
+                        title="Concept Creation" 
+                        content={<div className="project-details-content">
+                                    <br />
+                                    <p>Objectives:</p>
+                                    <ul>
+                                        <li>Identified the target audience: burger enthusiasts looking for convenient online ordering.</li>
+                                        <li>Designed a user-friendly interface to enhance the online shopping experience.</li>
+                                        <li>Brainstormed unique branding elements to differentiate BigBoyBurgers from competitors.</li>
+                                    </ul>
+                                </div>} 
                     />
                     <Dropdown 
-                        title="Solutions Implemented" 
-                        content={<p>Detail the solutions you implemented to overcome the challenges.</p>} 
+                        title="Features" 
+                        content={<div className="project-details-content">
+                                    <br />
+                                    <p>Describe the challenges you faced during the project:</p>
+                                    <ul>
+                                        <li>Identified the target audience: burger enthusiasts looking for convenient online ordering.</li>
+                                        <li>Designed a user-friendly interface to enhance the online shopping experience.</li>
+                                        <li>Brainstormed unique branding elements to differentiate BigBoyBurgers from competitors.</li>
+                                    </ul>
+                                </div>} 
                     />
                     <Dropdown 
                         title="What I Learned" 
-                        content={<p>Reflect on what you learned from this project.</p>} 
+                        content={<div className="project-details-content">
+                                    <br />
+                                    <p>Objectives:</p>
+                                    <ul>
+                                        <li>Identified the target audience: burger enthusiasts looking for convenient online ordering.</li>
+                                        <li>Designed a user-friendly interface to enhance the online shopping experience.</li>
+                                        <li>Brainstormed unique branding elements to differentiate BigBoyBurgers from competitors.</li>
+                                    </ul>
+                                </div>} 
                     />
                     <Dropdown 
-                        title="Results" 
-                        content={<p>Summarize the results and success metrics of the project.</p>} 
+                        title="Conclusion" 
+                        content={<div className="project-details-content">
+                                    <br />
+                                    <p>Objectives:</p>
+                                    <ul>
+                                        <li>Identified the target audience: burger enthusiasts looking for convenient online ordering.</li>
+                                        <li>Designed a user-friendly interface to enhance the online shopping experience.</li>
+                                        <li>Brainstormed unique branding elements to differentiate BigBoyBurgers from competitors.</li>
+                                    </ul>
+                                </div>}  
                     />
                     <Dropdown 
                         title="Future Improvements" 
-                        content={<p>Discuss potential future improvements or next steps.</p>} 
+                        content={<div className="project-details-content">
+                                    <br />
+                                    <p>Objectives:</p>
+                                    <ul>
+                                        <li>Identified the target audience: burger enthusiasts looking for convenient online ordering.</li>
+                                        <li>Designed a user-friendly interface to enhance the online shopping experience.</li>
+                                        <li>Brainstormed unique branding elements to differentiate BigBoyBurgers from competitors.</li>
+                                    </ul>
+                                </div>}  
                     />
                 </section>
             </article>
