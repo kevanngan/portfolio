@@ -5,8 +5,7 @@
     position: relative;
     overflow: hidden;
     @include flex-column(center, center, 0);
-    height: calc(100vh - $mobile-header-height);
-    margin-bottom: 6.5rem;
+    height: 100vh;
     text-align: center;
 
     .hero-content {
