@@ -32,7 +32,7 @@ const Nav = ({ toggleNav, scrollToTop }) => {
                 <li><Link to="/portfolio/" onClick={scrollToTop}>Home</Link></li>
                 <li><Link to="/portfolio/#about-section" onClick={() => handleNavClick('#about-section')}>About</Link></li>
                 <li><Link to="/portfolio/#projects-section" onClick={() => handleNavClick('#projects-section')}>Projects</Link></li>
-                <li><ScrollLink to="contact-section" smooth={true} duration={500}>Contact</ScrollLink></li>
+                <li><ScrollLink to="site-footer" smooth={true} duration={500}>Contact</ScrollLink></li>
             </ul>
         </nav>
     );

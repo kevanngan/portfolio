@@ -2,7 +2,7 @@ const Footer = () => {
     
   return (
 
-    <footer className="site-footer" id="contact-section">
+    <footer className="site-footer" id="site-footer">
         <div className="footer-content">
             <p>&copy; {new Date().getFullYear()} Kevan Ngan</p>
 
