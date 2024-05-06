@@ -64,6 +64,12 @@
     @include mq($desktop-large-width) {
         ul {
             gap: rem(126);
+
+            li {
+                a {
+                    font-size: rem(24);
+                }
+            }
         }
     }
 }
