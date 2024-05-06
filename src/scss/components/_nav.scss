@@ -23,6 +23,7 @@
     ul {
         @include flex-column(space-evenly, center, 0);
         height: 100%;
+        cursor: pointer;
     }
 
     li a,

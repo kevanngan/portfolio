@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link as ScrollLink } from 'react-scroll';
 
 const Hero = ({ restBase }) => {
   const postId = 19;
@@ -21,7 +22,10 @@ const Hero = ({ restBase }) => {
     <>
       {heroData && (
         <article id={`hero-section`}>
-          <div className="hero-content" dangerouslySetInnerHTML={{ __html: heroData.content.rendered }}></div>
+          <div className="hero-content">
+            <div dangerouslySetInnerHTML={{ __html: heroData.content.rendered }}></div>
+            <button><ScrollLink to="projects-section" smooth={true} duration={500}>View My Projects ↴</ScrollLink></button>
+          </div>
           <img src="assets/images/character.svg" alt="Character image." />
         </article>
       )}

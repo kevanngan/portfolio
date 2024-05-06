@@ -3,27 +3,52 @@
 
 #hero-section {
     position: relative;
-    height: 100vh;
     overflow: hidden;
+    @include flex-column(center, center, 0);
+    height: 100vh;
+    text-align: center;
+    padding: 1rem;
+
+    .hero-content {
+
+        p {
+            font-size: 1.5rem;
+            line-height: $line-height;
+            margin-bottom: 1.5rem;
+        }
+
+        button {
+            padding: $padding;
+            box-shadow: 5px 3px 5px $accent-shade;
+            background-color: $secondary-colour;
+            transition: 0.3s;
+            color: $text-colour;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+    
+            &:hover {
+                box-shadow: 0 0 15px 5px $accent-shade;
+                // transform: scale(1.1);
+                color: $accent-colour;
+            }
+        }
+    }
 
     img {
         display: none;
     }
 
-    .hero-content {
-        @include flex-column(center, center, 0);
-        height: 100vh;
-        text-align: center;
+    @media (min-width: $tablet-width) {
+    @include flex-row(space-evenly, center, 0);
 
-        p {
-            font-size: 1.5rem;
-            line-height: $line-height;
+        .hero-content p {
+            font-size: 3rem;
         }
     }
 
-    @media (min-width: $tablet-width) {
-        img {
-            display: block;
-        }
+    img {
+        display: block;
+        width: 800px;
     }
 }
