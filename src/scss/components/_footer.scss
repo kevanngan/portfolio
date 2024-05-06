@@ -2,9 +2,11 @@
 @use '../base/variables' as *;
 
 .site-footer {
-    height: 100%;
     background-color: $secondary-colour;
     padding: 1rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 
     .footer-content {
         @include flex-column(center, center, 1rem);

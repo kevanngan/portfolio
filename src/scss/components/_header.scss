@@ -10,6 +10,7 @@ header {
     height: $mobile-header-height;
     padding: rem(16) rem(25);
     z-index: 100;
+    top: 0;
 
     img {
         width: 100px;
