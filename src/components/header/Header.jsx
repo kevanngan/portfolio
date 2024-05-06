@@ -3,6 +3,7 @@ import HamburgerMenu from '../HamburgerMenu';
 import Nav from '../Nav';
 import { tabletWidth } from '../../globals/globalVariables';
 import { scrollToTop } from '../../globals/globalFunctions';
+import { Link} from 'react-router-dom';
 
 function Header() {
 
@@ -28,10 +29,12 @@ function Header() {
 
   return (
     <header className={`header ${showNav ? 'show' : ''}`}>
+      <Link to="/portfolio/" onClick={scrollToTop}>
         <img src="assets/logo/kn-logo.png" alt="Logo" />
-        <HamburgerMenu showNav={showNav} toggleNav={toggleNav} />
-        <Nav toggleNav={toggleNav} scrollToTop={scrollToTop}/>
-    </header>
+      </Link>
+      <HamburgerMenu showNav={showNav} toggleNav={toggleNav} />
+      <Nav toggleNav={toggleNav} scrollToTop={scrollToTop}/>
+  </header>
   );
 }
 
