@@ -3,8 +3,6 @@
 
 .project-page {
     @include flex-column(center, flex-start, 1rem);
-    position: relative;
-    height: auto;
     padding: 7rem 1rem 2rem;
 
     .project-info-wrapper {
@@ -103,6 +101,15 @@
 
         .project-info-wrapper .project-image img {
             width: 650px;
+        }
+    }
+
+    @media (min-width: 160em) {
+        width: 2000px;
+        margin: 20rem auto;
+
+        .project-info-wrapper .project-image img {
+            width: 1000px;
         }
     }
 }
