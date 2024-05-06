@@ -7,4 +7,12 @@
     img {
         width: 3rem;
     }
+
+    @media (min-width: $tablet-width) {
+        gap: 1.5rem;
+
+        img {
+            width: 4rem;
+        }
+    }
 }
