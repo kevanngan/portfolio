@@ -51,7 +51,7 @@
 
     .project-details {
         @include flex-column(center, flex-start, 1rem);
-
+        
         p {
             font-weight: bold;
             padding-bottom: 1rem;
