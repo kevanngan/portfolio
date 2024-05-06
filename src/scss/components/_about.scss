@@ -1,0 +1,43 @@
+@use '../utilities/mixins' as *;
+@use '../base/variables' as *;
+
+#about-section {
+    @include flex-column(center, center, 1rem);
+    height: 100%;
+
+    .about-content {
+        @include flex-column(flex-start, flex-start, 1rem);
+
+        h1 {
+            margin: 1rem auto;
+        }
+    }
+
+    .stack-tools {
+        @include flex-column(center, center, 1rem);
+        text-align: center;
+    }
+
+    @media (min-width: $tablet-width) {
+        width: 550px;
+        margin: auto;
+    }
+
+    @media (min-width: $desktop-small-width) {
+        @include flex-row(space-between, center, 1rem);
+        width: 850px;
+
+        .about-content {
+            width: 600px;
+        }
+    }
+
+    @media (min-width: $desktop-large-width) {
+        @include flex-row(space-between, center, 1rem);
+        width: 1200px;
+
+        .about-content {
+            width: 800px;
+        }
+    }
+}

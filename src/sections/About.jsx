@@ -23,24 +23,29 @@ const About = ({ restBase }) => {
     <>
       {aboutData && (
         <article id={`about-section`}>
-          <h1>{aboutData.title.rendered}</h1>
-          <p>{aboutData.acf.intro_1}</p>
-          <p>{aboutData.acf.intro_2}</p>
-          <div className="faq">
-            <Dropdown 
-              question="What's your favourite genres of music?"
-              answer="I enjoy Future Bass and Melodic dubstep, J-Pop and C-Pop."
-            />
-            <Dropdown 
-              question="What are your favourite games?"
-              answer="League of Legends, Teamfight Tactics, and Valorant."
-            />
-            <Dropdown 
-              question="What hobby do you want to get into?"
-              answer="I'm looking to get into gardening, I find the thought of just working on a small vegetable garden relaxing and satisfying when the vegetable or fruits are ripen. (Assuming everything goes well!)"
-            />
+          <div className="about-content">
+            <h1>{aboutData.title.rendered}</h1>
+            <p>{aboutData.acf.intro_1}</p>
+            <p>{aboutData.acf.intro_2}</p>
+            <div className="faq">
+              <Dropdown 
+                question="What's your favourite genres of music?"
+                answer="I enjoy Future Bass and Melodic dubstep, J-Pop and C-Pop."
+              />
+              <Dropdown 
+                question="What are your favourite games?"
+                answer="League of Legends, Teamfight Tactics, and Valorant."
+              />
+              <Dropdown 
+                question="What hobby do you want to get into?"
+                answer="I'm looking to get into gardening, I find the thought of just working on a small vegetable garden relaxing and satisfying when the vegetable or fruits are ripen. (Assuming everything goes well!)"
+              />
+            </div>
           </div>
-          <TechStack images={ techStackImages } />
+          <div className="stack-tools">
+            <h2>Stack and Tools</h2>
+            <TechStack images={ techStackImages } />
+          </div>
         </article>
       )}
     </>
