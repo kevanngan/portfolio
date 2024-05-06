@@ -2,5 +2,32 @@
 @use '../utilities/mixins' as *;
 
 .project-page {
+    @include flex-column(center, flex-start, 1rem);
+    position: relative;
+    padding: 7rem 1rem 2rem;
+
+    .project-info-wrapper {
+        @include flex-column(center, center, 1rem);
+
+        .project-info-content {
+            @include flex-column(center, flex-start, 1rem);
+            order: 1;
+
+            .icons-container {
+                @include flex-row-wrap(space-evenly, center, 1rem);
+            }
+
+            a:hover {
+                color: $accent-colour;
+            }
+        }
     
+        .project-image img {
+            width: 288px;
+        }
+    }
+
+    .project-details {
+        
+    }
 }
