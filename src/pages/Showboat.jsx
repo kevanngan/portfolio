@@ -66,11 +66,11 @@ const Showboat = ({ restBase }) => {
                         title="Concept Creation" 
                         content={<div className="project-details-content">
                                     <br />
-                                    <p>Objectives:</p>
+                                    <p>Objectives :</p>
                                     <ul>
-                                        <li>Identified the target audience: burger enthusiasts looking for convenient online ordering.</li>
-                                        <li>Designed a user-friendly interface to enhance the online shopping experience.</li>
-                                        <li>Brainstormed unique branding elements to differentiate BigBoyBurgers from competitors.</li>
+                                        <li>Create a React-based movie database application that fetches and displays movie information using The Movie Database (TMDb) API.</li>
+                                        <li>Design the web application to be fully responsive, ensuring it works seamlessly across various screen sizes.</li>
+                                        <li>Enable users to add their favorite movies to a "My List" feature, utilizing the browser's local storage.</li>
                                     </ul>
                                 </div>} 
                     />
@@ -78,23 +78,13 @@ const Showboat = ({ restBase }) => {
                         title="Features" 
                         content={<div className="project-details-content">
                                     <br />
-                                    <p>Describe the challenges you faced during the project:</p>
+                                    <p>My List</p>
                                     <ul>
-                                        <li>Identified the target audience: burger enthusiasts looking for convenient online ordering.</li>
-                                        <li>Designed a user-friendly interface to enhance the online shopping experience.</li>
-                                        <li>Brainstormed unique branding elements to differentiate BigBoyBurgers from competitors.</li>
+                                        <li>In the "My List" feature of your application, Redux Toolkit is used to manage and persist the list of favorite movies. This setup allows for efficient state updates and synchronization across the app. Actions to add or remove favorites trigger updates to the state, which are seamlessly saved to and retrieved from the browser's local storage, ensuring users' favorites are preserved across sessions. The use of Redux Toolkit ensures that the user interface remains responsive and up-to-date with user interactions.</li>
                                     </ul>
-                                </div>} 
-                    />
-                    <Dropdown 
-                        title="What I Learned" 
-                        content={<div className="project-details-content">
-                                    <br />
-                                    <p>Objectives:</p>
+                                    <p>Movie Searching</p>
                                     <ul>
-                                        <li>Identified the target audience: burger enthusiasts looking for convenient online ordering.</li>
-                                        <li>Designed a user-friendly interface to enhance the online shopping experience.</li>
-                                        <li>Brainstormed unique branding elements to differentiate BigBoyBurgers from competitors.</li>
+                                        <li>The "Movie Searching" feature in the application leverages The Movie Database (TMDb) API to provide a comprehensive search experience. Users can quickly find movies by title, genre, or release year. The search interface is designed to be intuitive, offering real-time results as users type, enhancing the usability and interaction. This feature makes discovering new and old favorites simple and enjoyable, catering to a wide range of cinematic preferences.</li>
                                     </ul>
                                 </div>} 
                     />
@@ -102,25 +92,19 @@ const Showboat = ({ restBase }) => {
                         title="Conclusion" 
                         content={<div className="project-details-content">
                                     <br />
-                                    <p>Objectives:</p>
+                                    <p>What I Learned :</p>
                                     <ul>
-                                        <li>Identified the target audience: burger enthusiasts looking for convenient online ordering.</li>
-                                        <li>Designed a user-friendly interface to enhance the online shopping experience.</li>
-                                        <li>Brainstormed unique branding elements to differentiate BigBoyBurgers from competitors.</li>
+                                        <li>Utilize Fetch API in React to make HTTP requests and process reponses.</li>
+                                        <li>Learned to utilize the browser's local storage for data storage.</li>
+                                        <li>Developed skills in managing favorited movies using Redux Toolkit in a React environment.</li>
+                                        <li>Acquired knowledge in implementing page routing using React Router.</li>
                                     </ul>
-                                </div>}  
-                    />
-                    <Dropdown 
-                        title="Future Improvements" 
-                        content={<div className="project-details-content">
-                                    <br />
-                                    <p>Objectives:</p>
+                                    <p>Future Improvements :</p>
                                     <ul>
-                                        <li>Identified the target audience: burger enthusiasts looking for convenient online ordering.</li>
-                                        <li>Designed a user-friendly interface to enhance the online shopping experience.</li>
-                                        <li>Brainstormed unique branding elements to differentiate BigBoyBurgers from competitors.</li>
+                                        <li>In the future, I may add a user authentication system.</li>
+                                        <li>Social features is also another possiblilty to enchance user experience.</li>
                                     </ul>
-                                </div>}  
+                                </div>} 
                     />
                 </section>
             </article>
