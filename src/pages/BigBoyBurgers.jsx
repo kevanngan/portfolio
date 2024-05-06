@@ -63,24 +63,46 @@ const BigBoyBurgers = ({ restBase }) => {
 
                 <section className="project-details">
                     <Dropdown 
-                        title="Challenges Faced" 
-                        content={<p>Describe the challenges you faced during the project.</p>} 
+                        title="Concept Creation" 
+                        content={<div className="project-details-content">
+                                    <br />
+                                    <p>Objectives :</p>
+                                    <ul>
+                                        <li>Develop a WooCommerce store website as a group of 4 for our capstone project.</li>
+                                        <li>Design a mockup website and bring it to life.</li>
+                                        <li>Create online ordering for delivery and pickup.</li>
+                                    </ul>
+                                </div>} 
                     />
                     <Dropdown 
-                        title="Solutions Implemented" 
-                        content={<p>Detail the solutions you implemented to overcome the challenges.</p>} 
+                        title="Features" 
+                        content={<div className="project-details-content">
+                                    <br />
+                                    <p>Build Your Own Burger</p>
+                                    <ul>
+                                        <li>Customers may create their own burger with this feature, from adding bacon, extra cheese or removing a patty, there are a variety of options.</li>
+                                    </ul>
+                                    <p>Online Ordering</p>
+                                    <ul>
+                                        <li>This online ordering feature allows users to look through the menu and order from ther website itself. They may also qualify for coupons and combos and purchase other items such as gift cards.</li>
+                                    </ul>
+                                </div>} 
                     />
                     <Dropdown 
-                        title="What I Learned" 
-                        content={<p>Reflect on what you learned from this project.</p>} 
-                    />
-                    <Dropdown 
-                        title="Results" 
-                        content={<p>Summarize the results and success metrics of the project.</p>} 
-                    />
-                    <Dropdown 
-                        title="Future Improvements" 
-                        content={<p>Discuss potential future improvements or next steps.</p>} 
+                        title="Conclusion" 
+                        content={<div className="project-details-content">
+                                    <br />
+                                    <p>What I Learned :</p>
+                                    <ul>
+                                        <li>Gained experience in implementing e-commerce principles such as product listings, shopping cards, and payment gateways on WordPress.</li>
+                                        <li>Developed skills and knowledge to customize the store to specific branding and funtionality.</li>
+                                        <li>Gained insight into the significance of user experience from the customers' perspective, emphasizing smooth and clear navigation, detailed product information in menus, and more.</li>
+                                    </ul>
+                                    <p>Future Improvements :</p>
+                                    <ul>
+                                        <li>Perhaps a survey, ratings or review mechanism would be valuable to gain insights from customers and improve overall quality of products and services.</li>
+                                    </ul>
+                                </div>} 
                     />
                 </section>
             </article>
