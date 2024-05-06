@@ -1,0 +1,31 @@
+@use '../utilities/mixins' as *;
+@use '../base/variables' as *;
+
+.site-footer {
+    height: 100%;
+    background-color: $secondary-colour;
+    padding: 1rem;
+
+    .footer-content {
+        @include flex-column(center, center, 1rem);
+        padding: 0 1rem;
+
+        .socials {
+            @include flex-row(space-evenly, center, 1rem);
+        }
+    }
+
+    @media (min-width: $tablet-width) {
+        .footer-content {
+            @include flex-row(space-between, center, 1rem);
+            width: 550px;
+            margin: auto;
+        }
+    }
+
+    @media (min-width: $desktop-large-width) {
+        .footer-content {
+            width: 1200px;
+        }
+    }
+}
