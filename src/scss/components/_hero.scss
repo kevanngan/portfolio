@@ -19,6 +19,11 @@
             font-size: 1.5rem;
             line-height: $line-height;
         }
-      }
-      
+    }
+
+    @media (min-width: $tablet-width) {
+        img {
+            display: block;
+        }
+    }
 }
