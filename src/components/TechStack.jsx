@@ -1,15 +1,15 @@
 import React from 'react';
 
 const techStackImages = [
-  'assets/icons/html-logo.svg',
-  'assets/icons/css-logo.svg',
   'assets/icons/javascript-logo.svg',
-  'assets/icons/git.png',
   'assets/icons/nodejs.png',
   'assets/icons/php.png',
-  'assets/icons/sass.png',
+  'assets/icons/html-logo.svg',
   'assets/icons/react.png',
   'assets/icons/typescript.png',
+  'assets/icons/git.png',
+  'assets/icons/css-logo.svg',
+  'assets/icons/sass.png',
   'assets/icons/wordpress.png',
 ];
 
