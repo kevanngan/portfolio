@@ -6,7 +6,7 @@ const Nav = ({ toggleNav, scrollToTop }) => {
     const location = useLocation();
 
     useEffect(() => {
-        if (location.hash && location.pathname === "/portfolio/") {
+        if (location.hash && location.pathname === "/") {
             const id = location.hash.replace('#', '');
             setTimeout(() => {
                 const element = document.getElementById(id);
@@ -21,7 +21,7 @@ const Nav = ({ toggleNav, scrollToTop }) => {
     }, [location]);
 
     const handleNavClick = (hash) => {
-        if (location.pathname === "/portfolio/" && location.hash !== hash) {
+        if (location.pathname === "/" && location.hash !== hash) {
             location.hash = hash;
         }
     };
@@ -29,9 +29,9 @@ const Nav = ({ toggleNav, scrollToTop }) => {
     return (
         <nav className='header-navigation' onClick={toggleNav}>
             <ul>
-                <li><Link to="/portfolio/" onClick={scrollToTop}>Home</Link></li>
-                <li><Link to="/portfolio/#about-section" onClick={() => handleNavClick('#about-section')}>About</Link></li>
-                <li><Link to="/portfolio/#projects-section" onClick={() => handleNavClick('#projects-section')}>Projects</Link></li>
+                <li><Link to="/" onClick={scrollToTop}>Home</Link></li>
+                <li><Link to="/#about-section" onClick={() => handleNavClick('#about-section')}>About</Link></li>
+                <li><Link to="/#projects-section" onClick={() => handleNavClick('#projects-section')}>Projects</Link></li>
                 <li><ScrollLink to="site-footer" smooth={true} duration={500}>Contact</ScrollLink></li>
             </ul>
         </nav>
