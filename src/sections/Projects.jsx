@@ -33,7 +33,7 @@ const Project = ({ restBase }) => {
             <div className="project-info project-info-1">
               <h3>Big Boy Burgers</h3>
               <p className="project-description">Explore our group capstone project, an online burger store built with WooCommerce on WordPress.</p>
-              <Link to="/portfolio/bigboyburgers">
+              <Link to="/bigboyburgers">
                 <p>More Details</p>
               </Link>
               <a href="https://github.com/htpwebdesign/bigboyburgers-theme" target="_blank">
@@ -51,10 +51,10 @@ const Project = ({ restBase }) => {
             <div className="project-info project-info-2">
               <h3>Showboat</h3>
               <p className="project-description">A movie database project built with React.</p>
-              <Link to="/portfolio/showboat">
+              <Link to="/showboat">
                 <p>More Details</p>
               </Link>
-              <a href="https://github.com/hojinchang/showboat" target="_blank">
+              <a href="https://github.com/kevanngan/showboat" target="_blank">
                 <p>View GitHub</p>
               </a>
             </div>
