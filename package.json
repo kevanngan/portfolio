@@ -11,6 +11,8 @@
     "sass": "sass src/scss:src/styles --watch"
   },
   "dependencies": {
+    "@tsparticles/all": "^3.3.0",
+    "@tsparticles/react": "^3.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.23.0",
