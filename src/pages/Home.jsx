@@ -31,8 +31,8 @@ const Home = ({ restBase }) => {
             <Hero restBase={restBase}/>
             <Projects restBase={restBase} />
             <About restBase={restBase} />
-            <Footer restBase={restBase}/>
           </main>
+            <Footer restBase={restBase}/>
         </>
       )}
     </div>
