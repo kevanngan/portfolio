@@ -7,13 +7,14 @@ header {
     position: fixed;
     background-color: $secondary-colour;
     width: 100%;
-    max-height: $mobile-header-height;
+    height: $mobile-header-height;
     padding: rem(16) rem(25);
     z-index: 100;
     top: 0;
     
 
     img {
+        display: block;
         width: 100px;
         transition: transform 0.1s;
 
