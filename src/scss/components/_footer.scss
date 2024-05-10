@@ -14,6 +14,14 @@
 
         .socials {
             @include flex-row(space-evenly, center, 1rem);
+
+            img {
+                transition: transform 0.1s;
+
+                &:active {
+                    transform: scale(0.95)
+                }
+            }
         }
     }
 
