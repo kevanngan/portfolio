@@ -29,7 +29,7 @@ function Header() {
 
   return (
     <header className={`header ${showNav ? 'show' : ''}`}>
-      <Link to="/portfolio/" onClick={scrollToTop}>
+      <Link to="/" onClick={scrollToTop}>
         <img src="assets/logo/kn-logo.png" alt="Logo" />
       </Link>
       <HamburgerMenu showNav={showNav} toggleNav={toggleNav} />
@@ -38,4 +38,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default Header;  
