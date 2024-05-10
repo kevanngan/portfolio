@@ -34,6 +34,10 @@
                 box-shadow: 0 0 15px 5px $accent-shade;
                 color: $accent-colour;
             }
+            
+            :active {
+                color: $accent-shade;
+            }
         }
     }
 

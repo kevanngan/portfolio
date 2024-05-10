@@ -27,19 +27,15 @@
                 border: none;
                 cursor: pointer;
                 text-align: center;
-    
-                :hover {
-                    color: $accent-colour;
-                }
         
                 &:hover {
                     box-shadow: 0 0 15px 5px $accent-shade;
                     color: $accent-colour;
                 }
-            }
-
-            a:hover {
-                color: $accent-colour;
+                
+                &:active {
+                    color: $accent-shade;
+                }
             }
         }
     

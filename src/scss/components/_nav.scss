@@ -33,10 +33,14 @@
         padding: 1rem;
         transition: color $link-hover-animation-time ease-in-out;
         text-decoration: none;
-    }
 
-    li a:hover {
-        color: $accent-shade;
+        &:hover {
+            color: $accent-colour;
+        }
+        
+        &:active {
+            color: $accent-shade;
+        }
     }
 
     @include mq($tablet-width) {
