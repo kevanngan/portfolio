@@ -16,7 +16,7 @@ header {
     img {
         display: block;
         width: 100px;
-        transition: transform 0.1s;
+        transition: transform 0.2s;
 
         &:active {
             transform: scale(0.95)
