@@ -16,6 +16,11 @@
             flex: 1;
             order: 1;
             max-width: 30%;
+            transition: transform 0.3s;
+
+            &:hover {
+                transform: scale(0.95);
+            }
 
             img {
                 width: 200px;
