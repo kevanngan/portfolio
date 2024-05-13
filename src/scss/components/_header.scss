@@ -23,6 +23,10 @@ header {
         }
     }
 
+    @include mq($tablet-width) {
+        position: absolute;
+    }
+
     @include mq($desktop-medium-width) {
         height: $desktop-header-height;
         padding: $padding rem(70);
